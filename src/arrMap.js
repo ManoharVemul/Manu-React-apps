@@ -34,33 +34,23 @@ const ArrMap = () => {
             runners: 3
         }
     ]
-const batch =  IplData.map((every) => (
+    const batch = IplData.map((every) => (
 
-    <div key={every.team} style={{ backgroundColor: "#f2f2f2", width: "300px", textAlign: "center", color: "rgb(255, 151, 29)", borderRadius: "15px" }}>
-        <h1>{every.team}</h1><br />
-        <img src={every.jerseyimg} alt={"manu"} />
-        <p>tropy  : {every.cups}</p>
-    </div>))
+        <div key={every.team} style={{ backgroundColor: "#f2f2f2", width: "300px", textAlign: "center", color: "rgb(255, 151, 29)", borderRadius: "15px" }}>
+            <h1>{every.team}</h1><br />
+            <img src={every.jerseyimg} alt={"manu"} />
+            <p>tropy  : {every.cups}</p>
+        </div>))
 
 
-    
+
     return (
-        // <>{
-        //     IplData.forEach((every) => {
-
-        //         <div style={{ backgroundColor: "#f2f2f2", width: "300px", textAlign: "center", color: "rgb(255, 151, 29)", borderRadius: "15px" }}>
-        //             <h1>{every.team}</h1><br />
-        //             <img src={every.jerseyimg} alt={"manu"} />
-        //             <p>tropy  : {every.cups}</p>
-        //         </div>
-        //     })
-        //  } </>
 
         <div>
             {batch}
 
         </div>
-        
+
     )
 }
 

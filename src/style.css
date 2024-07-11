@@ -1,0 +1,26 @@
+
+
+
+.fakeList{
+    background-color: "#26355D";
+    width: "300px";
+    text-align: "center";
+    color: "#FF8F00";
+    border-radius: "15px";
+    display:grid;
+}
+
+.button{
+    border-radius: "5px";
+    background-color: "#FFDB00";
+    color: "#AF47D2";
+}
+.nav{
+    display:grid;
+    color: blueviolet;
+} 
+
+
+/* style={{ backgroundColor: "#26355D", width: "300px", textAlign: "center", color: "#FF8F00", borderRadius: "15px" }}
+style={{ borderRadius: "5px",backgroundColor: "#FFDB00", color: "#AF47D2" }} 
+style={{display:"inline-block"}}*/

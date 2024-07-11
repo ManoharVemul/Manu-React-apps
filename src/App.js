@@ -4,18 +4,41 @@ import './App.css';
 // import OrderList from "./orderlist";
 // import Table from "./table";
 // import Card from "./card";
-import ArrMap from './arrMap';
+//import ArrMap from './arrMap';
+import CardList from './fakestore';
+import Header from './haeder';
+import './style.css'
 
 function App() {
-  return (
-    <div>
-      {/* <UnorderList></UnorderList>
-      <OrderList></OrderList>
-      <Table></Table><br/>
-      <Card></Card> */}
+  const ayyo = {
+    display: "grid",
+    textAlign: "center",
+    gridTemplateColumns: "auto auto auto auto",
+    gap: "20px",
 
-      <ArrMap></ArrMap>
-    </div>
+
+    borderRadius: "15px"
+
+  }
+  const ayyi = {
+    position: "fixed",
+    display: "grid",
+    width:"100%",
+    gridTemplateColumns: "auto auto auto auto auto",
+    backgroundColor: "#10908D"
+
+
+
+  }
+  return (
+    <>
+      <div style={ayyi}>
+        <Header></Header>
+      </div>
+      <div style={ayyo}>  <CardList></CardList>  </div>
+
+
+    </>
   );
 }
 
